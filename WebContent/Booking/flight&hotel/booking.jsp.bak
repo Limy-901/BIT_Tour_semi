@@ -1,0 +1,103 @@
+<html>
+<head>
+    <title>BOOKING</title>
+    <link rel="stylesheet" type="text/css" href="http://localhost/booking.css?ver=1">
+    <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css?ver=1">
+</head>
+<body>
+    <div class="wrapper1">
+        <div class="booking-form-box">
+            <h1>항공편</h1>
+            <div class="booking-form">
+                <label>출국 도시/공항</label>
+                <select class="custom-select">
+                    <option value="1">인천/인천공항</option>
+                    <option value="2">김포/김포공항</option>
+                </select>
+                <label>입국 도시/공항</label>
+                <select class="custom-select">
+                    <option value="1">도쿄/하네다공항</option>
+                    <option value="2">도쿄/나리타공항</option>
+                </select>
+                
+                <div class ="input-grp">
+                    <label>출국일</label>
+                    <input type="date" class="form-control select-date">
+                </div>
+
+                <div class ="input-grp">
+                    <label>입국일</label>
+                    <input type="date" class="form-control select-date">
+                </div>
+
+                <div class ="input-grp">
+                    <label>승객 수</label>
+                    <input type="number" class="form-control" value="1">
+                </div>
+            </div>
+        </div>
+
+        <div class="booking-form-box">
+            <h1>숙박</h1>
+            <div class="booking-form">
+                <label>호텔</label>
+                <select class="custom-select">
+                    <option value="1">나리타호텔</option>
+                    <option value="2">도쿄호텔</option>
+                    <option value="3">파라다이스호텔</option>
+                </select>
+                <label>객실 등급</label>
+                <select class="custom-select">
+                    <option value="1">디럭스 DELUXE</option>
+                    <option value="2">비즈니스 BUSINESS</option>
+                    <option value="3">이코노미 ECONOMY</option>
+                </select>
+                <div class ="input-grp">
+                    <label>체크인 CHECK-IN</label>
+                    <input type="date" class="form-control select-date">
+                </div>
+
+                <div class ="input-grp">
+                    <label>체크아웃 CHECK-OUT</label>
+                    <input type="date" class="form-control select-date">
+                </div>
+                <div class ="input-grp">
+                    <label>이용객 수</label>
+                    <input type="text" class="form-control" value="승객수와 동일" disabled>
+                </div>
+            </div>
+        </div>
+
+        <div class="booking-form-box">
+            <h1>결제</h1>
+            <div class="booking-form">
+                <label>결제 방식</label>
+                <select class="custom-select">
+                    <option value="1">신용카드</option>
+                    <option value="2">체크카드</option>
+                    <option value="3">계좌이체</option>
+                </select>
+                <label>이용 금융기관</label>
+                <select class="custom-select">
+                    <option value="1">신한</option>
+                    <option value="2">우리</option>
+                    <option value="3">농협</option>
+                </select>
+                <div class ="input-grp">
+                    <label>총 결제 금액</label>
+                    <input type="text" class="form-control select-date" value="700,000원" disabled>
+                </div>
+                <div class ="input-grp">
+                    <label>결제</label>
+                    <input type="submit" class="form-control" value="결제 요청" OnClick="location.href ='pay-result.html'" style="cursor:pointer";>
+                </div>
+                <div class ="input-grp2">
+                    <label>뒤로 가기</label>
+                    <input class="form-control" value="뒤로가기">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

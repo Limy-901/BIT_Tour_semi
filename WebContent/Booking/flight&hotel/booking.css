@@ -1,0 +1,118 @@
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../image/booking_bg.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-color: white;
+    display: grid;
+} 
+
+.wrapper1{
+    /* background-color: yellow;  */
+    margin-top: 100px;
+    display: flex;
+    justify-content: center; 
+    align-items:center;  
+}
+
+.booking-form-box
+{  
+    /* background-color: green;  */
+    display: inline-block;
+    max-width: 300px;
+    border: 1px solid white;
+    margin: 0 30px;
+    color:white;
+}
+
+.booking-form-box > h1
+{
+    margin: 10px auto 0;
+    text-align: center;
+}
+
+
+.radio-btn
+{
+    margin:0 20px; /* 하측, 좌측은 대칭으로 적용되는 듯?*/
+}
+
+.radio-btn .btn{
+    margin: 20px 10px;
+    box-shadow: none;
+}
+
+.radio-btn .btn::after /*버튼을 감싸는 영역을 만들어줌*/
+{
+    content: '';
+    height: 15px;
+    width: 15px;
+    top:-2px;
+    left: -1px;
+    background-color: #fff;
+    position: relative;
+    display: inline-block;
+    border: 3px solid #fff;
+    visibility:visible;
+    border-radius: 50%;
+}
+
+.radio-btn .btn:checked::after
+{
+    content: '';
+    background-color: #000;
+    transition: 0.5s;
+}
+
+.radio-btn span
+{
+    color:#fff;
+    margin-right:5px;
+    font-size: 12px;
+}
+
+.booking-form
+{
+    padding: 0 20px 20px 20px;
+}
+
+.booking-form label{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 15px;
+    color: white;
+}
+
+input::placeholder
+{
+    color:#fff !important;
+}
+
+.input-grp2{
+    opacity: 0;
+}
+/* .input-grp
+{
+    width: 120px;
+    display: inline-block;
+} */
+
+/* .form-contorl
+{
+    font-size:12px;
+    border-radius:0;
+    color:white;
+    /* box-shadow: none; 
+} */
+
+.select-date::-webkit-inner-spin-button,
+.select-date::-webkit-outer-spin-button
+{
+   -webkit-appearance: none;
+   margin:0; 
+}
+
+.select-date::-webkit-calender-picker-indicator
+{
+    background:transparent;
+}

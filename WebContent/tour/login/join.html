@@ -1,0 +1,66 @@
+<html>
+   <c:if test='${empty Member}'></c:if>
+   <head>
+      <title>Join</title>
+      <!-- <link rel='stylesheet' type='text/css' href='../../css/join.css'> -->
+      <link rel="stylesheet" href="../../css/qna.css">
+      <link rel="stylesheet" href="../../css/semantic.min.css">
+      <link rel="stylesheet" href="../../css/bootstrap.min.css">
+           
+      <!-- <link rel='stylesheet'href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css?ver=1'> -->
+   </head>
+   <body>
+    <div class="ui middle aligned center aligned grid">
+        <div class="ui stacked segment">
+                <center><h1> 회원가입 양식 </h1></center><br/><Br/><br/>
+                    <form name="f" action="../../tour/login/login.do?m=insert" method="post">
+                    <div class="ui equal width form">
+                        <div class="fields">
+                            <div class="field">
+                                <span style='color:rgb(124, 124, 124)'>E-mail</span>
+                                <span style='color:rgb(223, 111, 111)'>*</span></td>
+                                <td><input name ='email' type='text'  placeholder="E-mail"></td>
+                            </div>
+                            <div class="field">
+                                <span style='color:rgb(124, 124, 124)'>Password</span>
+                                <span style='color:rgb(223, 111, 111)'>*</span></td>
+                                <td><input name ='password' type='password'  placeholder="Password"></td>
+                            </div>
+                        </div><br/><br/>
+                        <div class="fields">
+                            <div class="field">
+                                <span style='color:rgb(124, 124, 124)'>이 름</span>
+                                <span style='color:rgb(223, 111, 111)'>*</span></td>
+                                <td><input name ='name' type="text" placeholder="이름"></td>
+                            </div>
+                            <div class="field">
+                                <span style='color:rgb(124, 124, 124)'>닉네임</span>
+                                <span style='color:rgb(223, 111, 111)'>*</span></td>
+                                <td><input name ='nickName' type="text" placeholder="닉네임"></td>
+                            </div>
+                        </div><br/><br/>
+                        <div class="fields">
+                            <div class="field">
+                                <span style='color:rgb(124, 124, 124)'>번호</span>
+                                <span style='color:rgb(223, 111, 111)'>* (숫자만)</span></td>
+                                <td><input name ='phone' type='text' placeholder="번호"></td>
+                            </div>
+                            <div class="field">
+                                <span style='color:rgb(124, 124, 124)'>생년월일</span>
+                                <span style='color:rgb(223, 111, 111);'>*</span></td>
+                                <td><input name ='phone' type='text' placeholder="생년월일 (숫자 8자리 입력)"></td>
+                            </div>
+                        </div><br/><br/>
+                    </div>
+                </form>
+                <button class="ui big teal button">
+                    가입
+                </button>&nbsp;&nbsp;&nbsp;
+                <button class="ui big yellow button">
+                    수정
+                </button>
+            </div>
+        </div>
+    </form>
+   </body>
+</html>

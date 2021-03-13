@@ -1,0 +1,165 @@
+@font-face {
+     font-family: 'S-CoreDream-5Medium';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+@font-face {
+     font-family: 'S-CoreDream-2ExtraLight';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+@font-face {
+     font-family: 'S-CoreDream-6Bold';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+:root{
+
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'S-CoreDream-6Bold';
+}
+
+.page-container{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(ocean.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.shadow{
+    -webkit-box-shadow: 27px 43px 43px -26px rgba(89,89,89,0.39);
+    -moz-box-shadow: 27px 43px 43px -26px rgba(89,89,89,0.39);
+    box-shadow: 27px 43px 43px -26px rgba(89,89,89,0.39);
+}
+.login-form-container{
+ 
+    background:#ffffff ;
+    width:860px;
+    height: 540px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 10px black;
+    border-radius: 10px;
+
+}
+.login-form-right-side{
+    width: 50%; 
+    border-radius: 10px 0px 0px 10px;
+    padding:75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #396873;
+    background-image: #3f6e7973;
+  	background-color: #cfecf2;
+}
+.login-form-right-side h1{
+    color: rgb(16, 153, 153);
+    width:100%;
+    text-align: right;
+    opacity: 0.9;
+    font-family: 'S-CoreDream-5Medium';
+
+}
+.login-form-right-side p{
+    padding-top: 50px;
+    font-size:15px;
+    text-align: right;
+    opacity: 0.8;
+    font-family: 'S-CoreDream-5Medium';
+}
+.login-form-left-side{
+    width: 50%;
+    border-radius: 0px 10px 10px 0px;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    padding:40px;
+    background: rgb(255,255,255);
+background: linear-gradient(287deg, rgba(255,255,255,1) 0%, rgba(243,244,244,1) 0%, rgba(255,255,255,1) 100%);
+}
+.login-form-left-side .login-top-wrap{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width:100%;
+}
+.login-form-left-side .login-top-wrap span{
+    color: rgb(16, 153, 153);
+    font-size: 15px;
+    padding-right:18px;
+
+}
+.login-form-left-side .login-top-wrap .create-account-btn {
+    background: white;
+    border:  0;
+    width:85px;
+    height: 26px;
+    font-size: 15px;
+    color: rgb(16, 153, 153);
+    border-radius: 5px;
+
+}
+.login-input-container{
+    padding-top:120px;
+    width:300px;
+}
+.login-input-container .login-input-wrap{
+    width:300px;
+    height: 45px;
+    margin-top: 20px;
+    border-radius: 2px;
+    border-bottom: solid 2px #2178ff;
+   
+}
+.login-input-container .login-input-wrap i{
+    color: #2178ff;
+    line-height: 45px;
+}
+
+.login-input-container .login-input-wrap input{
+    background: none;
+   
+    border: none;
+    line-height: 45px;
+    padding-left:10px;
+    width:267px;
+}
+.login-input-container .login-input-wrap input:focus{
+    outline: none;
+}
+.login-btn-wrap{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;;
+}
+.login-btn-wrap .login-btn{
+    width:95px;
+    height:35px;
+    color:white;
+    border: 0;
+    border-radius: 4px;
+
+    background: rgb(105,163,255);
+background: linear-gradient(162deg, rgba(105,163,255,1) 0%, rgba(43,125,254,1) 50%, rgba(43,125,254,1) 100%);
+}
+.login-btn-wrap a{
+    margin-top:10px;
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(16, 153, 153);
+
+}

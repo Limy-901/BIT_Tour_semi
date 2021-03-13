@@ -1,0 +1,85 @@
+@font-face {
+     font-family: 'S-CoreDream-5Medium';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+@font-face {
+     font-family: 'S-CoreDream-2ExtraLight';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+@font-face {
+     font-family: 'S-CoreDream-6Bold';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+*{
+    margin :0;
+}
+
+.header{
+    margin:0;
+    width:90%;
+    height: 0%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    align: center;
+}
+
+.nav ul li{
+    display:inline-block;
+    margin:0;
+}
+.nav ul li button{
+    font-family: 'S-CoreDream-6Bold';
+    font-size: 1.1rem;
+    background: none;
+    color: rgb(16, 153, 153);
+    border:0px;
+    padding:10px 20px;
+    border-radius: 10px;
+    margin-top:10px;
+    margin-bottom:10px;
+    outline:none;
+    cursor:pointer;
+    transition: all .4s;
+}
+
+.nav ul li button:hover{
+    background-color: rgb(16, 153, 153);
+    color: white;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.nav ul li a:hover{
+    color :#00aeff;
+}
+/* nav */
+
+body {
+    background-color: #DADADA;
+}
+body>.grid {
+    height: 100%;
+}
+.image {
+    margin-top: -100px;
+}
+.column {
+    max-width: 1000px;
+}
+.view_btn {
+    cursor: pointer;
+}
+.col_name{
+	font-family: 'S-CoreDream-6Bold';
+}
